@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="PcfDoomNamespace" constructor="PcfDoomComponent" version="0.0.1" display-name-key="PcfDoomComponent" description-key="PcfDoomComponent description" control-type="standard" >
+  <control namespace="PcfDoomNamespace" constructor="PcfDoomComponent" version="0.0.12" display-name-key="PcfDoomComponent" description-key="Running doom in Power Apps" control-type="standard" >
     <!--external-service-usage node declares whether this 3rd party PCF control is using external service or not, if yes, this control will be considered as premium and please also add the external domain it is using.
     If it is not using any external service, please set the enabled="false" and DO NOT add any domain below. The "enabled" will be false by default.
     Example1:
@@ -11,14 +11,10 @@
       <external-service-usage enabled="false">
       </external-service-usage>
     -->
-    <external-service-usage enabled="false">
-      <!--UNCOMMENT TO ADD EXTERNAL DOMAINS
-      <domain></domain>
-      <domain></domain>
-      -->
-    </external-service-usage>
+    
     <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
-    <property name="sampleProperty" display-name-key="Property_Display_Key" description-key="Property_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="TextBoxProperty" display-name-key="TextArea" description-key="Text area to bind PcfDoom to." of-type="Multiple" usage="bound" required="true" />
+    <property name="DoomEnablerOptionSet" display-name-key="DoomEnablerOptionSet" description-key="OptionSet that enables doom." of-type="OptionSet" usage="bound" required="true"/>
     <!--
       Property node's of-type attribute can be of-type-group attribute.
       Example:
@@ -32,6 +28,7 @@
     -->
     <resources>
       <code path="index.ts" order="1"/>
+      <css path="css/PcfDoomComponent.css" order="1"/>
       <!-- UNCOMMENT TO ADD MORE RESOURCES
       <css path="css/PcfDoomComponent.css" order="1" />
       <resx path="strings/PcfDoomComponent.1033.resx" version="1.0.0" />

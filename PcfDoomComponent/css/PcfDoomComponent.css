@@ -1,0 +1,60 @@
+.PcfDoomNamespace\.PcfDoomComponent {   
+  color:red;
+}
+
+.PcfDoomNamespace\.PcfDoomComponent .PcfDoomComponent_IFrame {
+	width: 600px;
+	height: 400px;
+} 
+
+.PcfDoomNamespace\.PcfDoomComponent .iframe-wrapper {
+  position: relative;
+  width: fit-content; /* or a specific width */
+  display: inline-block;
+}
+
+.PcfDoomNamespace\.PcfDoomComponent .iframe-wrapper iframe {
+  display: block;
+  border: none;
+}
+
+.PcfDoomNamespace\.PcfDoomComponent .bossKey {
+  color: red;
+  animation: pulse-text 1s infinite;
+  margin-top: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+@keyframes pulse-text {
+  0%, 100% {
+    text-shadow: 0 0 2px red, 0 0 10px red;
+    color: red;
+  }
+  50% {
+    text-shadow: 0 0 10px #ff6666, 0 0 20px #ff0000;
+    color: #ff6666;
+  }
+}
+
+/* Overlay elements */
+.PcfDoomNamespace\.PcfDoomComponent .iframe-wrapper::before,
+.PcfDoomNamespace\.PcfDoomComponent .iframe-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 50px; /* adjust width as needed to cover black */
+  height: 100%;
+  background: white; /* or match the background of your page */
+  z-index: 10;
+}
+
+.PcfDoomNamespace\.PcfDoomComponent .iframe-wrapper::before {
+  left: 0;
+}
+
+.PcfDoomNamespace\.PcfDoomComponent .iframe-wrapper::after {
+  right: 0;
+}
