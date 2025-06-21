@@ -8,7 +8,7 @@ It demonstrates a PowerApps component framework (PCF) controls that loads Doom. 
 - ```doom-crt.html``` needs to uploaded to a Web Resource in your environment.
 - Update [index.ts](/PcfDoomComponent/index.ts) and modify ```const iFrameSrc = "/WebResources/cc_doomcrt"```so that it points to your Web Resource.
 - Use the PAC CLI and run ```pac pcf push``` to upload the PCF to your environment.
-- Using the "classic" for editor, modify the properties of a Textarea field, and configure the **PcfDoomComponent** on the **Controls** tab.
+- Using the "classic" form editor, modify the properties of a Textarea field, and configure the **PcfDoomComponent** on the **Controls** tab.
 - The **TextArea** property should be bound to a textarea field.
 - The **DoomEnablerOptionSet** should be bound to a OptionSet field. This field needs to have an option with the value of **5** for the textarea to be replaced by Doom (can be changed in [index.ts](/PcfDoomComponent/index.ts)).
 
