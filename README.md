@@ -1,8 +1,8 @@
-# DoomPcf demo
+# PcfDoom demo
 
 This is the source code for a little stupid demo I did and posted to [LinkedIn](https://www.linkedin.com/posts/andreas-adner-70b1153_pcf-webassembly-dataverse-activity-7341938289056075777-hT-R?utm_source=share&utm_medium=member_desktop&rcm=ACoAAACM8rsBEgQIrYgb4NZAbnxwfDRk_Tu5e3w).
 
-It demonstrates a PowerApps component framework (PCF) controls that loads Doom. This webassembly version of doom comes from Mattias Gustavssons [repo](https://github.com/mattiasgustavsson/doom-crt) - I owe him thanks! For convenience, my repo includes a [pre-built version](/doom-crt-built/doom-crt.html), if you don't want to build it yourself.
+It demonstrates a PowerApps component framework (PCF) controls that loads Doom. This webassembly version of Doom comes from Mattias Gustavssons [repo](https://github.com/mattiasgustavsson/doom-crt) - I owe him thanks! For convenience, my repo includes a [pre-built version](/doom-crt-built/doom-crt.html), if you don't want to build it yourself.
 
 ## How to deploy and configure
 - ```doom-crt.html``` needs to uploaded to a Web Resource in your environment.
